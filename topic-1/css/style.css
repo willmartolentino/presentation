@@ -1,13 +1,109 @@
-ul {
-    margin: 0;
-    padding: 0;
+h2 {
+    clear: both;
+    padding-top: 50px;
 }
 
-li {
+ul {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 10%;
     list-style-type: none;
-    /*position: absolute;*/
-    width: 50px;
-    height: 50px;
-    border: 1px solid red;
+}
+
+.list-1 .list-group {
+    float: left;
+    width: 50%;
+}
+
+.list-1 li {
+    border-left: 1px solid gray;
+    border-bottom: 1px solid gray;
+    background: #000;
+    color: #FFF;
     text-align: center;
 }
+
+/*------------------------------------------------------------------
+ # [.list-2] ::start
+-------------------------------------------------------------------*/
+.list-2 li {
+    /*position: absolute;*/
+    width: 100px;
+    height: 20px;
+    border: 1px solid gray;
+    background-color: #000;
+    color: #FFF;
+    text-align: center;
+}
+
+/*.list-2 li:first-child {
+    top: 0;
+    left: 0;
+}
+.list-2 li:nth-child(2) {
+    top: 20px;
+    left: 0;
+}
+.list-2 li:nth-child(3) {
+    top: 40px;
+    left: 0;
+}
+.list-2 li:nth-child(4) {
+    top: 0px;
+    left: 100px;
+}
+.list-2 li:nth-child(5) {
+    top: 20px;
+    left: 100px;
+}
+.list-2 li:nth-child(6) {
+    top: 40px;
+    left: 100px;
+}*/
+/*------------------------------------------------------------------
+ # [.list-2] ::end
+-------------------------------------------------------------------*/
+
+
+/*------------------------------------------------------------------
+ # [.list-3] ::start
+-------------------------------------------------------------------*/
+.list-3 {
+/*    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 70px;
+    width: 104px;*/
+}
+
+.list-3 li {
+    width: 100px;
+    height: 20px;
+    border: 1px solid gray;
+    background-color: #000;
+    color: #FFF;
+    text-align: center;
+}
+/*------------------------------------------------------------------
+ # [.list-3] ::end
+-------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------
+ # [.list-4] ::start
+-------------------------------------------------------------------*/
+.list-4 li {
+    width: 100px;
+    height: 20px;
+    background-color: #000;
+    color: #FFF;
+    text-align: center;
+    border: 1px solid white;
+}
+
+/*.list-4 li:nth-child(4){ margin-top:-66px; }
+
+.list-4 li:nth-child(n+4){ margin-left:102px; }*/
+/*------------------------------------------------------------------
+ # [.list-4] ::end
+-------------------------------------------------------------------*/
