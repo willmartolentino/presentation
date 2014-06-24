@@ -53,7 +53,7 @@ ul {
  # [.list-2] ::start
 -------------------------------------------------------------------*/
 .list-2 li {
-    /*position: absolute;*/
+    position: absolute;
     width: 100px;
     height: 20px;
     border: 1px solid gray;
@@ -62,7 +62,7 @@ ul {
     text-align: center;
 }
 
-/*.list-2 li:first-child {
+.list-2 li:first-child {
     top: 0;
     left: 0;
 }
@@ -85,7 +85,7 @@ ul {
 .list-2 li:nth-child(6) {
     top: 40px;
     left: 100px;
-}*/
+}
 /*------------------------------------------------------------------
  # [.list-2] ::end
 -------------------------------------------------------------------*/
@@ -95,11 +95,11 @@ ul {
  # [.list-3] ::start
 -------------------------------------------------------------------*/
 .list-3 {
-/*    display: flex;
+    display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     height: 70px;
-    width: 104px;*/
+    width: 104px;
 }
 
 .list-3 li {
@@ -126,9 +126,9 @@ ul {
     border: 1px solid gray;
 }
 
-/*.list-4 li:nth-child(4){ margin-top:-66px; }
+.list-4 li:nth-child(4) { margin-top:-66px; }
 
-.list-4 li:nth-child(n+4){ margin-left:102px; }*/
+.list-4 li:nth-child(n+4){ margin-left:102px; }
 /*------------------------------------------------------------------
  # [.list-4] ::end
 -------------------------------------------------------------------*/
