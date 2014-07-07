@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <title>A Glimpse of SASS</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <h1>A Glimpse of SASS</h1>
+        <hr />
+         
+        <div>
+            <h2>CSS Extensions</h2>
+
+            <div>
+                <h3>Referencing Parent Selectors using "&amp;"</h3>
+                <div class="wrapper wrapper-1">
+                    <h4 class="underline">Example No. 2: Supposing that you have an element which 'id' has a value of 'main-sidebar'</h4>
+                    <div class="text">
+                        <p>#main {</p>
+                        <p class="pl30">color: black;</p><br />
+                        <p class="pl30">&amp;-sidebar { border: 1px solid; }</p>
+                        <p>}</p>
+                    </div>
+                </div>
+                
+                <div id="wrapper-2" class="wrapper wrapper-2">
+                    <h4 class="underline">is compiled to:</h4>
+                    <div class="text">
+                        <p>#main { color: black; }</p><br />
+                        <p>#main-sidebar { border: 1px solid; }</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr />
+
+        <button id="btn">Hit It!</button>
+
+        <button>
+            <a href="topic-2-4.html">Next</a>
+        </button>
+
+        <button>
+            <a href="topic-2-2.html">Previous</a>
+        </button>
+         
+        <script type="text/javascript">
+        var btn = document.getElementById("btn");
+        
+        btn.onclick = function() {
+            document.getElementById("wrapper-2").style.visibility = "visible";
+        };
+        </script>
+    </body>
+</html>

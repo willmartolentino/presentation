@@ -1,0 +1,29 @@
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+p { font-size: 1.2em; }
+
+.wrapper { padding: 10px 20px 30px; }
+
+.wrapper-1 { background-color: #CCC; }
+
+.wrapper-2 {
+    background-color: #999;
+    visibility: hidden;
+}
+
+li { font-size: 1.2em; }
+
+.text p,
+.text li {
+    margin: 0;
+    font-style: italic;
+}
+
+.pl30 { padding-left: 30px; }
+
+.pl60 { padding-left: 60px; }
+
+.underline { text-decoration: underline; }

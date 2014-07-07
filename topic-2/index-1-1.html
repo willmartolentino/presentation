@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <title>A Glimpse of SASS</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <h1>A Glimpse of SASS</h1>
+        <hr />
+         
+        <div>
+            <h2>CSS Extensions</h2>
+
+            <div>
+                <h3>Nested Rules - This helps avoid repetition of parent selectors</h3>
+                <div class="wrapper wrapper-1">
+                    <h4 class="underline">Example No. 1:</h4>
+                    <div class="text">
+                        <p>#main p {</p>
+                        <p class="pl30">color: #00ff00;</p>
+                        <p class="pl30">width: 97%;</p>
+                    </div><br />
+
+                    <div class="text">
+                        <p class="pl30">.redbox {</p>
+                        <p class="pl30">background-color: #ff0000;</p>
+                        <p class="pl30">color: #000000;</p>
+                        <p class="pl30">}</p>
+                        <p>}</p>
+                    </div>
+                </div>
+                
+                <div id="wrapper-2" class="wrapper wrapper-2">
+                    <h4 class="underline">is compiled to:</h4>
+                    <div class="text">
+                        <p>#main p {</p>
+                        <p class="pl30">color: #00ff00;</p>
+                        <p class="pl30">width: 97%;</p>
+                        <p>}</p>
+                    </div><br />
+
+                    <div class="text">
+                        <p>#main p .redbox {</p>
+                        <p class="pl30">background-color: #ff0000;</p>
+                        <p class="pl30">color: #000000;</p>
+                        <p>}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr />
+
+        <button id="btn">Hit It!</button>
+
+        <button>
+            <a href="topic-2-2.html">Next</a>
+        </button>
+
+        <button>
+            <a href="topic-2.html">Previous</a>
+        </button>
+         
+        <script type="text/javascript">
+        var btn = document.getElementById("btn");
+        
+        btn.onclick = function() {
+            document.getElementById("wrapper-2").style.visibility = "visible";
+        };
+        </script>
+    </body>
+</html>
