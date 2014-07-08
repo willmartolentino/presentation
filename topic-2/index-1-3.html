@@ -7,12 +7,11 @@
     </head>
     <body>
         <h1>A Glimpse of SASS</h1>
-        <hr />
          
         <div>
             <h2>CSS Extensions</h2>
 
-            <div>
+            <div class="details">
                 <h3>Referencing Parent Selectors using "&amp;"</h3>
                 <div class="wrapper wrapper-1">
                     <h4 class="underline">Example No. 2: Supposing that you have an element which 'id' has a value of 'main-sidebar'</h4>
@@ -34,23 +33,21 @@
             </div>
         </div>
 
-        <hr />
-
-        <button id="btn">Hit It!</button>
+        <button id="btn" class="mr30">Hit It!</button>
 
         <button>
-            <a href="topic-2-4.html">Next</a>
+            <a href="index-1-2.html">Previous</a>
         </button>
-
+        
         <button>
-            <a href="topic-2-2.html">Previous</a>
+            <a href="index-1-4.html">Next</a>
         </button>
          
         <script type="text/javascript">
         var btn = document.getElementById("btn");
         
         btn.onclick = function() {
-            document.getElementById("wrapper-2").style.visibility = "visible";
+            document.getElementById("wrapper-2").style.display = "block";
         };
         </script>
     </body>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <title>A Glimpse of SASS</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <h1>A Glimpse of SASS</h1>
+         
+        <div>
+            <h2>SassScript</h2>
+            <p>It allows properties to use variables, arithmetic, and extra functions.</p>
+
+            <div class="details">
+				<ul class="text">
+					<li>numbers (e.g. 1.2, 13, 10px)</li>
+					<li>strings of text, with and without quotes (e.g. "foo", 'bar', baz)</li>
+					<li>colors (e.g. blue, #04a3f9, rgba(255, 0, 0, 0.5))</li>
+					<li>booleans (e.g. true, false)</li>
+					<li>nulls (e.g. null)</li>
+					<li>lists of values, separated by spaces or commas (e.g. 1.5em 1em 0 2em, Helvetica, Arial, sans-serif)</li>
+					<li>maps from one value to another (e.g. (key1: value1, key2: value2))</li>
+				</ul>
+            </div>
+        </div>
+
+        <button id="btn" class="mr30">Hit It!</button>
+
+        <button>
+            <a href="index-1-7.html">Previous</a>
+        </button>
+        
+        <button>
+            <a href="index.html">Next</a>
+        </button>
+         
+        <script type="text/javascript">
+        var btn = document.getElementById("btn");
+        
+        btn.onclick = function() {
+            document.getElementById("wrapper-2").style.display = "block";
+        };
+        </script>
+    </body>
+</html>

@@ -1,3 +1,21 @@
+body {
+	padding: 30px;
+	font-family: monospace;
+}
+
+h1, h2, h3, h4, h5, h6  {
+	margin-top: auto;
+}
+
+h1 {
+	font-size: 4.0em;
+	padding-bottom: 10px;
+	border-bottom: 1px dashed #999;
+}
+h2 { font-size: 2.5em; }
+h3 { font-size: 1.8em; }
+h4 { font-size: 1.3em; }
+
 a {
     color: #000;
     text-decoration: none;
@@ -5,16 +23,39 @@ a {
 
 p { font-size: 1.2em; }
 
+.details {
+	margin: 30px auto;
+	padding: 20px;
+	border-top: 1px solid #999;
+	border-bottom: 1px solid #999;
+}
+
 .wrapper { padding: 10px 20px 30px; }
 
 .wrapper-1 { background-color: #CCC; }
 
 .wrapper-2 {
     background-color: #999;
-    visibility: hidden;
+    display: none;
 }
 
 li { font-size: 1.2em; }
+
+button {
+	font-size: 1.0em;
+	padding: 4px 10px;
+	background-color: #CCC;
+	font-family: monospace;
+	font-weight: bold;
+	width: 100px;
+	
+	border-radius:  7px;
+}
+
+button:hover {
+	background-color: #999;
+	cursor: pointer;
+}
 
 .text p,
 .text li {
@@ -22,8 +63,14 @@ li { font-size: 1.2em; }
     font-style: italic;
 }
 
-.pl30 { padding-left: 30px; }
+.note { color: #FFF; }
 
+.pr30 { padding-right: 30px; }
+.pl30 { padding-left: 30px; }
 .pl60 { padding-left: 60px; }
+
+.mr30 { margin-right: 30px; }
+.ml30 { margin-left: 30px; }
+.ml60 { margin-left: 60px; }
 
 .underline { text-decoration: underline; }
