@@ -6,47 +6,39 @@
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-        <h1>A Glimpse of SASS</h1>
-         
-        <div>
-            <h2>CSS Extensions</h2>
-
-            <div class="details">
-                <h3>Comments</h3>
-                <div class="wrapper wrapper-1">
-                    <h4 class="underline">Example No. 1: using the multiline comment</h4>
-                    <div class="text">
-                        <p>/* This is a multiline comment and it will appear in the CSS output /*</p>
-                        <p>body { color: black; }</p>
+        <section id="main-content" class="main-content">
+            <h1>A Glimpse of SASS</h1>
+             
+            <div>
+                <h2>CSS Extensions</h2>
+            
+                <div class="details">
+                    <h3>Comments</h3>
+                    <div class="wrapper wrapper-1">
+                        <h4 class="underline">Example No. 1: using the multiline comment</h4>
+                        <div class="text">
+                            <p>/* This is a multiline comment and it will appear in the CSS output */</p>
+                            <p>body { color: black; }</p>
+                        </div>
                     </div>
-                </div>
-                
-                <div id="wrapper-2" class="wrapper wrapper-2">
-                    <h4 class="underline">is compiled to:</h4>
-                    <div class="text">
-                        <p>/* This is a multiline comment and it will appear in the CSS output /*</p>
-                        <p>body { color: black; }</p>
+                    
+                    <div id="wrapper-2" class="wrapper wrapper-2">
+                        <h4 class="underline">is compiled to:</h4>
+                        <div class="text">
+                            <p>/* This is a multiline comment and it will appear in the CSS output */</p>
+                            <p>body { color: black; }</p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-
-        <button id="btn" class="mr30">Hit It!</button>
-
-        <button>
-            <a href="index-1-4.html">Previous</a>
-        </button>
-        
-        <button>
-            <a href="index-1-6.html">Next</a>
-        </button>
+            
+            <a id="btn" class="link mr30">Hit It!</a>
+            
+            <a href="index-1-4.html" class="link">Previous</a>
+            
+            <a href="index-1-6.html" class="link">Next</a>
+        </section>
          
-        <script type="text/javascript">
-        var btn = document.getElementById("btn");
-        
-        btn.onclick = function() {
-            document.getElementById("wrapper-2").style.display = "block";
-        };
-        </script>
+        <script src="scripts/script.js"></script>
     </body>
 </html>

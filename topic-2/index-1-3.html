@@ -6,49 +6,41 @@
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-        <h1>A Glimpse of SASS</h1>
-         
-        <div>
-            <h2>CSS Extensions</h2>
-
-            <div class="details">
-                <h3>Referencing Parent Selectors using "&amp;"</h3>
-                <div class="wrapper wrapper-1">
-                    <h4 class="underline">Example No. 2: Supposing that you have an element which 'id' has a value of 'main-sidebar'</h4>
-                    <div class="text">
-                        <p>#main {</p>
-                        <p class="pl30">color: black;</p><br />
-                        <p class="pl30">&amp;-sidebar { border: 1px solid; }</p>
-                        <p>}</p>
+        <section id="main-content" class="main-content">
+            <h1>A Glimpse of SASS</h1>
+             
+            <div>
+                <h2>CSS Extensions</h2>
+            
+                <div class="details">
+                    <h3>Referencing Parent Selectors using "&amp;"</h3>
+                    <div class="wrapper wrapper-1">
+                        <h4 class="underline">Example No. 2: Supposing that you have an element which 'id' has a value of 'main-sidebar'</h4>
+                        <div class="text">
+                            <p>#main {</p>
+                            <p class="pl30">color: black;</p><br />
+                            <p class="pl30">&amp;-sidebar { border: 1px solid; }</p>
+                            <p>}</p>
+                        </div>
                     </div>
-                </div>
-                
-                <div id="wrapper-2" class="wrapper wrapper-2">
-                    <h4 class="underline">is compiled to:</h4>
-                    <div class="text">
-                        <p>#main { color: black; }</p><br />
-                        <p>#main-sidebar { border: 1px solid; }</p>
+                    
+                    <div id="wrapper-2" class="wrapper wrapper-2">
+                        <h4 class="underline">is compiled to:</h4>
+                        <div class="text">
+                            <p>#main { color: black; }</p><br />
+                            <p>#main-sidebar { border: 1px solid; }</p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-
-        <button id="btn" class="mr30">Hit It!</button>
-
-        <button>
-            <a href="index-1-2.html">Previous</a>
-        </button>
-        
-        <button>
-            <a href="index-1-4.html">Next</a>
-        </button>
+            
+            <a id="btn" class="link mr30">Hit It!</a>
+            
+            <a href="index-1-2.html" class="link">Previous</a>
+            
+            <a href="index-1-4.html" class="link">Next</a>
+        </section>
          
-        <script type="text/javascript">
-        var btn = document.getElementById("btn");
-        
-        btn.onclick = function() {
-            document.getElementById("wrapper-2").style.display = "block";
-        };
-        </script>
+        <script src="scripts/script.js"></script>
     </body>
 </html>

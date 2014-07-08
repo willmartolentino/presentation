@@ -6,61 +6,53 @@
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-        <h1>A Glimpse of SASS</h1>
-         
-        <div>
-            <h2>CSS Extensions</h2>
-
-            <div class="details">
-                <h3>Referencing Parent Selectors using "&amp;"</h3>
-                <div class="wrapper wrapper-1">
-                    <h4 class="underline">Example No. 1:</h4>
-                    <div class="text">
-                        <p>a {</p>
-                        <p class="pl30">font-weight: bold;</p>
-                        <p class="pl30">text-decoration: none;</p>
-                    </div><br />
-
-                    <div class="text">
-                        <p class="pl30">&amp;:hover { text-decoration: underline; }</p>
-                        <p class="pl30">body.firefox &amp; { font-weight: normal; }</p>
-                        <p>}</p>
+        <section id="main-content" class="main-content">
+            <h1>A Glimpse of SASS</h1>
+             
+            <div>
+                <h2>CSS Extensions</h2>
+            
+                <div class="details">
+                    <h3>Referencing Parent Selectors using "&amp;"</h3>
+                    <div class="wrapper wrapper-1">
+                        <h4 class="underline">Example No. 1:</h4>
+                        <div class="text">
+                            <p>a {</p>
+                            <p class="pl30">font-weight: bold;</p>
+                            <p class="pl30">text-decoration: none;</p>
+                        </div><br />
+            
+                        <div class="text">
+                            <p class="pl30">&amp;:hover { text-decoration: underline; }</p>
+                            <p class="pl30">body.firefox &amp; { font-weight: normal; }</p>
+                            <p>}</p>
+                        </div>
                     </div>
-                </div>
-                
-                <div id="wrapper-2" class="wrapper wrapper-2">
-                    <h4 class="underline">is compiled to:</h4>
-                    <div class="text">
-                        <p>a {</p>
-                        <p class="pl30">font-weight: bold;</p>
-                        <p class="pl30">text-decoration: none;</p>
-                        <p>}</p>
-                    </div><br />
-
-                    <div class="text">
-                        <p>a:hover { text-decoration: underline; }</p><br />
-                        <p>body.firefox a { font-weight: normal; }</p>
+                    
+                    <div id="wrapper-2" class="wrapper wrapper-2">
+                        <h4 class="underline">is compiled to:</h4>
+                        <div class="text">
+                            <p>a {</p>
+                            <p class="pl30">font-weight: bold;</p>
+                            <p class="pl30">text-decoration: none;</p>
+                            <p>}</p>
+                        </div><br />
+            
+                        <div class="text">
+                            <p>a:hover { text-decoration: underline; }</p><br />
+                            <p>body.firefox a { font-weight: normal; }</p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-
-        <button id="btn" class="mr30">Hit It!</button>
-
-        <button>
-            <a href="index-1-1.html">Previous</a>
-        </button>
-        
-        <button>
-            <a href="index-1-3.html">Next</a>
-        </button>
+            
+            <a id="btn" class="link mr30">Hit It!</a>
+            
+            <a href="index-1-1.html" class="link">Previous</a>
+            
+            <a href="index-1-3.html" class="link">Next</a>
+        </section>
          
-        <script type="text/javascript">
-        var btn = document.getElementById("btn");
-        
-        btn.onclick = function() {
-            document.getElementById("wrapper-2").style.display = "block";
-        };
-        </script>
+        <script src="scripts/script.js"></script>
     </body>
 </html>
