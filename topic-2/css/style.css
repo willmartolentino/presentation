@@ -25,8 +25,8 @@ h4 { font-size: 1.3em; }
 .link {
     position: relative;
     display: inline-block;
-    padding: 7px 0;
-    width: 100px;
+    padding: 7px 10px;
+    min-width: 80px;
     border: 1px solid #888;
     border-radius: 5px;
     background: #888;
