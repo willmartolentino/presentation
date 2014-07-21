@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <title>A Glimpse of SASS</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <section id="main-content" class="main-content">
+            <h1>Looking Deeply</h1>
+             
+            <div>
+                <h2>SASS in the command line</h2>
+                
+                <div class="details">
+                    <h3>What is Mixins?</h3>
+
+                    <div class="wrapper wrapper-1">
+                        <p>
+                            So, mixins let you define common properties once, then re-use them.
+                        </p>
+                        
+                        <p>
+                            Mixins are define by using @mixin directive, and if you want to 
+                            use the mixin, you have to use the $include directive to include 
+                            the mixin.
+                        </p>
+                    </div>
+                    
+                    <div id="wrapper-2" class="wrapper wrapper-2">
+                        <h3 class="underline">Example:</h3>
+                        
+                        <div>
+                            <h4 class="underline">SASS</h4>
+                            <p>@mixin .myMixin {</p>
+                            <p class="pl30">font-size: 18px;</p>
+                            <p class="pl30">background-color: white;</p>
+                            <p>}</p><br/>
+                                
+                            <p>.myStyle {</p>
+                            <p class="pl30">@include myMixin;</p>
+                            <p>}</p>
+                        </div>
+
+                        <br /><br />
+
+                        <div>
+                            <h4 class="underline">CSS</h4>
+                                
+                            <p>.myStyle {</p>
+                            <p class="pl30">font-size: 18px;</p>
+                            <p class="pl30">background-color: white;</p>
+                            <p>}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <a id="btn" class="link mr30">Hit It!</a>
+
+            <a href="index-2-1.html" class="link">Previous</a>
+            
+            <a href="index-2-3.html" class="link">Next</a>
+        </section>
+         
+        <script src="scripts/script.js"></script>
+    </body>
+</html>
