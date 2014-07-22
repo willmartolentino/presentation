@@ -1,0 +1,15 @@
+@mixin commonTraits {
+    border-radius: 10px;
+    border: 1px solid green;
+    padding: 10px;
+}
+
+header {
+    color: #274D87;
+    @include commonTraits;
+}
+
+footer {
+    color: #3264AF;
+    @include commonTraits;
+}
