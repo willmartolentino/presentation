@@ -13,10 +13,11 @@
                 <h2>SASS in the command line</h2>
                 
                 <div class="details">
-                    <h3>Basic commands you should know for compiling SASS files</h3>
+                    <h3>SASS basic commands in the Terminal/Command line</h3>
                 
                     <div class="wrapper wrapper-1">
                         <ul class="text">
+                            <li>gem install sass</li>
                             <li>sass -?</li>
                             <li>sass --update filename</li>
                             <li>sass --watch (source directory):(destination directory)</li>
@@ -26,18 +27,22 @@
                     <div id="wrapper-2" class="wrapper wrapper-2">
                         <ul class="text">
                             <li>
-                                <strong>Command for HELP</strong><br />
+                                <strong class="underline">To install SASS</strong><br />
+                                gem install sass<br /><br />
+                            </li>
+                            <li>
+                                <strong class="underline">Command for HELP</strong><br />
                                 sass -?<br /><br />
                             </li>
                             <li>
-                                <strong>Command to convert a .scss file to a .css file</strong><br />
+                                <strong class="underline">Command to convert a .scss file to a .css file</strong><br />
                                 sass --update filename<br />
                                 sass --update original_filename.scss:new_filename.css<br />
-                                <strong>Command to convert a bunch of .scss files or a directory containing the .scss files</strong><br />
+                                <strong class="underline">Command to convert a bunch of .scss files or a directory containing the .scss files</strong><br />
                                 sass --update (source directory):(destination directory)<br /><br />
                             </li>
                             <li>
-                                <strong>Command to convert a .scss file/s to a .css file/s and 
+                                <strong class="underline">Command to convert a .scss file/s to a .css file/s and 
                                 once you use this command you can freely edit the file/s you 
                                 want without typing the --update command in the terminal over and over 
                                 again because it automatically converts the file/s when you run it.
