@@ -10,14 +10,15 @@
     }
 }
 
-@mixin customBorder2 ($width: 1px, $color: black, $style: solid) {
+/*@mixin customBorder2 ($width: 1px, $color: black, $style: solid) {
     border: {
         width: $width;
         color: $color;
         style: $style;
     }
-}
+}*/
 
 #mypara {
     @include customBorder(3px, blue, dashed);
+    //@include customBorder2(3px, red, solid);
 }

@@ -1,6 +1,13 @@
 /*
  Using SASS Mixins with arguments
  */
+/*@mixin customBorder2 ($width: 1px, $color: black, $style: solid) {
+    border: {
+        width: $width;
+        color: $color;
+        style: $style;
+    }
+}*/
 #mypara {
   border-width: 3px;
   border-color: blue;

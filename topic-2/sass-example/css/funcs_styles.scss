@@ -2,7 +2,7 @@
  * Using Functions in SASS
  */
  
-$color: olive;
+$color: navy;
  
 @mixin border-radius($radius: 5px) {
     -moz-border-radius: $radius;
@@ -13,16 +13,17 @@ $color: olive;
 
 h1 {
     color: $color;
-    background-color: grayscale(invert($color));
+    background-color: #EEE;
+    //background-color: grayscale(invert($color));
 }
 h2 {
-    color: lighten($color, 20%);
+    //color: lighten($color, 20%);
 }
 h3 {
-    color: lighten($color, 30%);
+    //color: lighten($color, 30%);
 }
 h4 {
-    color: lighten($color, 40%);
+    //color: lighten($color, 40%);
 }
 
 #mypara {

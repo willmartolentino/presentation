@@ -2,24 +2,15 @@
  * Using Functions in SASS
  */
 h1 {
-  color: olive;
-  background-color: #bfbfbf; }
-
-h2 {
-  color: #e6e600; }
-
-h3 {
-  color: #ffff1a; }
-
-h4 {
-  color: #ffff4d; }
+  color: navy;
+  background-color: #EEE; }
 
 #mypara {
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   -ms-border-radius: 5px;
   border-radius: 5px;
-  border-color: #c7c76b;
+  border-color: #6b6bc7;
   border-width: 2px;
   border-style: solid;
   padding: 10px; }

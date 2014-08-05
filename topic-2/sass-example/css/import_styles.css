@@ -1,10 +1,10 @@
 h1, h2 {
-  color: navy; }
+  color: red; }
 
 #mypara {
-  font-size: 18px;
-  border: 1px solid navy;
-  padding: 15px 15px 15px 15px; }
+  font-size: 12px;
+  border: 1px solid red;
+  padding: 5px; }
 
 #mypara:after {
-  content: " with an appended string"; }
+  content: " some content"; }
