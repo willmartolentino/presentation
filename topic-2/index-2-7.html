@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <title>SASS - Looking Deeply</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <section id="main-content" class="main-content">
+            <h1>Looking Deeply</h1>
+             
+            <div>
+                <h2>Interpolation</h2>
+                
+                <div class="details">
+                    <h3>What is Interpolation?</h3>
+
+                    <div class="wrapper wrapper-1">
+                        <p>
+                            Basically it means to "<strong><em>put this there</em></strong>".
+                        </p>
+                        
+                        <p>
+                            It also means that the very <em class="underline">name</em> of a property or selector could be
+                            dynamically generated.
+                        </p>
+                        
+                        <h4 class="underline">How to use Interpolation?</h4>
+						
+						<p>Just wrap the name of a variable in <strong><em>#{}</em></strong>.</p>	
+                    </div>
+                    
+                    <div id="wrapper-2" class="wrapper wrapper-2">						
+                        <h3 class="underline">Example:</h3>
+                        
+                        <div>
+                            <h4 class="underline">SASS</h4>
+                            <p>@mixin car_make($car_make, $car_color) {</p>
+                            <p class="pl30">// Set the $car_make with "_make" at the end as a class</p>
+                            <p class="pl30">.car.#{$car_make}_make {</p>
+                            <p class="pl60">color: $car_color;</p>
+                            <p class="pl60">width: 100px;</p>
+                            <p class="pl60">.image { background: url("images/#{$car_make}/#{$car_color}.png"); }</p>
+                            <p class="pl30">}</p>
+                            <p>}</p><br/>
+                                
+                            <p>@include car_make("volvo", "green");</p>
+                        </div>
+
+                        <br /><br />
+
+                        <div>
+                            <h4 class="underline">CSS</h4>
+                                
+                            <p>.car.volvo_make {</p>
+                            <p class="pl30">color: "green";</p>
+                            <p class="pl30">width: 100px;</p>
+                            <p>}</p>
+                            <p>.car.volvo_make .image { background: url("images/volvo/green.png"); }</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <a id="btn" class="link mr30">Hit It!</a>
+
+            <a href="index-2-6.html" class="link">Previous</a>
+            
+            <a href="index-2-8.html" class="link">Next</a>
+        </section>
+         
+        <script src="scripts/script.js"></script>
+    </body>
+</html>

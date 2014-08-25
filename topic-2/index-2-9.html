@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <title>SASS - Looking Deeply</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <section id="main-content" class="main-content">
+            <h1>Looking Deeply</h1>
+             
+            <div>
+                <h2>@if</h2>
+                
+                <div class="details">
+
+                    <div class="wrapper wrapper-1">
+                        <p>
+                            It allows us to write conditions in our Sass. 
+                            This kind of feature is mostly useful when 
+                            writing what we generally refer to as 
+                            SassScript, writing reusable mixins and 
+                            functions for Sass.
+                        </p>
+                    </div>
+                    
+                    <div id="wrapper-2" class="wrapper wrapper-2">
+                        <h3 class="underline">Example:</h3>
+                        
+                        <div>
+                            <h4 class="underline">SASS</h4>
+                            <p>@mixin country_color($country) {</p>
+                            <p class="pl30">@if $country == philippines {</p>
+                            <p class="pl60">color: blue; }</p>
+                            <p class="pl30">@else if $country == spain {</p>
+                            <p class="pl60">color: yellow; }</p>
+                            <p class="pl30">@else {</p>
+                            <p class="pl60">color: red; }</p>
+                            <p>}</p><br />
+                            
+                            <p>.england { @include country_color(england); }</p>
+                            <p>.philippines { @include country_color(philippines); }</p>
+                        </div>
+
+                        <br /><br />
+
+                        <div>
+                            <h4 class="underline">CSS</h4>
+                                
+                            <p>.england { color: red; } // default color</p>
+                            <p>.philippines { color: blue; }</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <a id="btn" class="link mr30">Hit It!</a>
+
+            <a href="index-2-8.html" class="link">Previous</a>
+            
+            <!-- <a id="end" class="link">End</a> -->
+        </section>
+         
+        <script src="scripts/script.js"></script>
+    </body>
+</html>
